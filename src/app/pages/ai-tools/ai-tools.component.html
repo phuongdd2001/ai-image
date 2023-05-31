@@ -1,0 +1,54 @@
+<div class="popular-tools">
+<span nz-typography class="title">POPULAR TOOLS</span>
+<nz-list nzGrid>
+  <div nz-row [nzGutter]="32">
+    <div nz-col [nzSpan]="4" *ngFor="let item of dataTrend">
+      <nz-list-item >
+        <nz-card nzHoverable [nzCover]="coverTemplate" [routerLink]="['/ai-tools', item.linkURL]">
+          <nz-card-meta
+            [nzTitle]="item.title"
+            [nzDescription]="item.des"
+          ></nz-card-meta>
+        </nz-card>
+        <ng-template #coverTemplate>
+          <img [alt]="item.des" [src]="'assets/image/ai-tools/' + item.linkImage" />
+        </ng-template>
+      </nz-list-item>
+    </div>
+  </div>
+</nz-list>
+</div>
+
+
+<div class="all-tools">
+  <span nz-typography>All Tools</span>
+  <ul nz-menu nzMode="inline" [nzSelectable]="false" class="tabs-option">
+    <li
+      *ngFor="let item of listMenu(); let index = index"
+      nz-menu-item
+      [nzSelected]="item.active"
+      (click)="listFiter(index)"
+      class="item-filter"
+    >
+      {{ item.name }}
+    </li>
+  </ul>
+</div>
+
+<nz-list nzGrid >
+  <div nz-row [nzGutter]="32">
+    <div nz-col [nzXXl]="4" [nzXl]="4" [nzLg]="6" [nzMd]="6" [nzSm]="12" [nzXs]="24" *ngFor="let item of dataAllActive()">
+      <nz-list-item>
+        <nz-card nzHoverable  [nzCover]="coverTemplate" [routerLink]="['/ai-tools', item.linkURL]" >
+          <nz-card-meta
+            [nzTitle]="item.title"
+            [nzDescription]="item.des"
+          ></nz-card-meta>
+        </nz-card>
+        <ng-template #coverTemplate>
+          <img [alt]="item.des" [src]="'assets/image/ai-tools/' + item.linkImage" />
+        </ng-template>
+      </nz-list-item>
+    </div>
+  </div>
+</nz-list>

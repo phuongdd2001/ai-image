@@ -1,0 +1,66 @@
+.ant-card-bordered {
+    border: unset;
+    background: unset;
+}
+
+span[nz-typography] {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    &.title {
+        margin-bottom: 16px;
+    }
+}
+
+::ng-deep .ant-card-bordered .ant-card-cover {
+    height: 60%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    img {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 4px 4px 0px 0px;
+    }
+}
+
+.all-tools {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tabs-option {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 12px;
+    background: unset;
+    width: auto;
+    border: unset;
+    margin-bottom: 16px;
+    li {
+        display: inline-block;
+        width: auto;
+        margin: 0;
+        box-sizing: border-box;
+        padding: 4px 12px !important;
+        border: 1px solid rgb(160, 174, 192);
+        color: rgb(160, 174, 192);
+        border-radius: 26px;
+        font-size: 12px;
+        line-height: 16px;
+        height: unset;
+        &.ant-menu-item-selected {
+            background-color: rgb(87, 91, 107);
+            border: 1px solid rgb(87, 91, 107);
+            color: rgb(255, 255, 255);
+        }
+        &::after {
+            display: none;
+        }
+    }
+}

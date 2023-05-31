@@ -1,0 +1,25 @@
+<div nz-row [nzGutter]="32">
+    <div nz-col [nzSpan]="18">
+        <nz-upload
+            nzType="drag"
+            [nzMultiple]="true"
+            nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+            (nzChange)="handleChange($event)"
+        >
+            <p class="ant-upload-drag-icon">
+                <span nz-icon nzType="inbox"></span>
+            </p>
+            <p class="ant-upload-text">Click or drag file to this area to upload</p>
+            <p class="ant-upload-hint">
+                Support for a single or bulk upload. Strictly prohibit from uploading
+                company data or other band files
+            </p>
+        </nz-upload>
+    </div>
+    <div nz-col [nzSpan]="6">
+        <nz-tabset nzType="card">
+            <nz-tab *ngFor="let tab of tabs" [nzTitle]="'Tab' + tab">Content of Tab Pane {{ tab }}</nz-tab>
+          </nz-tabset>
+    </div>
+</div>
+

@@ -1,0 +1,184 @@
+{
+    "locations": [
+        {
+            "title": "Gen-1: Video to Video",
+            "des": "Change the style of a video with text or images.",
+            "trend": true,
+            "linkImage": "Gen-1_video_to_video.jpg",
+            "linkURL": "gen-video",
+            "value": "video"
+        },
+        {
+            "title": "AI Training",
+            "des": "Create custom Portraits, Animals, Styles and more.",
+            "trend": true,
+            "linkImage": "Train_your_own+Generator.jpg",
+            "value": "image"
+        },
+        {
+            "title": "Remove Background",
+            "des": "Automatically remove the background from any video.",
+            "linkImage": "removeBackground.png",
+            "value": "video"
+        },
+        {
+            "title": "Text to Image",
+            "des": "Generate original images with nothing but words.",
+            "trend": true,
+            "linkImage": "Text_to_image.jpg",
+            "value": "image"
+        },
+        {
+            "title": "Image to Image",
+            "des": "Transform any image with a text prompt.",
+            "trend": true,
+            "linkImage": "Image_to_image.jpg",
+            "value": "image"
+        },
+        {
+            "title": "Expand Image",
+            "des": "Expand the edges of any image.",
+            "linkImage": "expandImageVertical.png",
+            "value": "image"
+        },
+        {
+            "title": "Frame Interpolation",
+            "des": "Turn a sequence of images into an animated video.",
+            "linkImage": "FrameInterpolation.jpg",
+            "value": "image"
+        },
+        {
+            "title": "Erase and Replace",
+            "des": "Reimagine and remix any part of any image.",
+            "linkImage": "Erase+and+replace.jpg",
+            "value": "image"
+        },
+        {
+            "title": "Infinite Image",
+            "des": "Expand an image with Text to Image generation.",
+            "trend": true,
+            "linkImage": "infiniteImage.png",
+            "value": "image"
+        },
+        {
+            "title": "Backdrop Remix",
+            "des": "Give any photo infinite backgrounds.",
+            "linkImage": "backdropRemix.png",
+            "value": "image"
+        },
+        {
+            "title": "Image Variation",
+            "des": "Generate new variations of an image.",
+            "linkImage": "imageVariations.png",
+            "value": "image"
+        },
+        {
+            "title": "3D Texture",
+            "des": "Generate 3D textures with text prompts.",
+            "linkImage": "textTo3D.png",
+            "value": "3d"
+        },
+        {
+            "title": "Inpainting",
+            "des": "Remove people and things from videos.",
+            "linkImage": "Inpainting+B+Large.jpeg",
+            "value": "video"
+        },
+        {
+            "title": "Color Grade (LUT)",
+            "des": "Color grade videos with text prompts.",
+            "linkImage": "textToLut.png",
+            "value": "image"
+        },
+        {
+            "title": "Super-Slow Motion",
+            "des": "Turn any video into smooth slow motion.",
+            "linkImage": "Super-Slow+Motion+Large.jpeg",
+            "value": "video"
+        },
+        {
+            "title": "Blur Faces",
+            "des": "Detect and hide faces in videos.",
+            "linkImage": "Blur+Faces.png",
+            "value": "image"
+        },
+        {
+            "title": "Inpainting",
+            "des": "Remove people and things from videos.",
+            "linkImage": "bokeh.png",
+            "value": "image"
+        },
+        {
+            "title": "Color Grade (LUT)",
+            "des": "Color grade videos with text prompts.",
+            "linkImage": "sceneDetection.png",
+            "value": "image"
+        },
+        {
+            "title": "Super-Slow Motion",
+            "des": "Turn any video into smooth slow motion.",
+            "linkImage": "Extract+Depth+B+Large.jpeg",
+            "value": "image"
+        },
+        {
+            "title": "Blur Faces",
+            "des": "Detect and hide faces in videos.",
+            "linkImage": "cleanAudio.png",
+            "value": "audio"
+        },
+        {
+            "title": "Blur Faces",
+            "des": "Detect and hide faces in videos.",
+            "linkImage": "removeSilence.png",
+            "value": "video"
+        },
+        {
+            "title": "Inpainting",
+            "des": "Remove people and things from videos.",
+            "linkImage": "subtitles.png",
+            "value": "video"
+        },
+        {
+            "title": "Inpainting",
+            "des": "Remove people and things from videos.",
+            "linkImage": "transcript.png",
+            "value": "video"
+        },
+        {
+            "title": "Inpainting",
+            "des": "Remove people and things from videos.",
+            "linkImage": "colorize.png",
+            "value": "image"
+        },
+        {
+            "title": "Inpainting",
+            "des": "Remove people and things from videos.",
+            "linkImage": "Upscale.png",
+            "value": "image"
+        },
+        {
+            "title": "Inpainting",
+            "des": "Remove people and things from videos.",
+            "linkImage": "Replace+Background+B+Large.jpeg",
+            "value": "video"
+        },
+        {
+            "title": "Inpainting",
+            "des": "Remove people and things from videos.",
+            "linkImage": "blurBackground.png",
+            "value": "video"
+        },
+        {
+            "title": "Inpainting",
+            "des": "Remove people and things from videos.",
+            "linkImage": "AddGreen+B+Large.jpeg",
+            "value": "image"
+        },
+        {
+            "title": "Inpainting",
+            "des": "Remove people and things from videos.",
+            "linkImage": "Moiton+Tracking.jpg",
+            "value": "image"
+        }
+    ]
+}
