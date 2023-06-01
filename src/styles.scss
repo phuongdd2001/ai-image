@@ -2,3 +2,23 @@
 body p, span {
     margin: 0;
 }
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: rgb(169, 184, 255) !important;
+}
+
+.ant-tabs-card.ant-tabs-top > .ant-tabs-nav .ant-tabs-tab {
+    border-radius: 30px !important;
+    background: unset;
+}
+
+.ant-tabs-top > .ant-tabs-nav::before {
+    display: none;
+}
+
+.ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap {
+    justify-content: center;
+    .ant-tabs-nav-list {
+        column-gap: 10px;
+    }
+}

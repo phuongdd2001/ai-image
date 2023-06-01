@@ -4,18 +4,28 @@ import { NzUploadChangeParam, NzUploadModule } from 'ng-zorro-antd/upload';
 import { NzMessageService } from 'ng-zorro-antd/message';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { FormsModule } from '@angular/forms';
 @Component({
     selector: 'app-gen-video',
     standalone: true,
-    imports: [CommonModule, NzUploadModule, NzGridModule, NzTabsModule ],
+    imports: [
+        CommonModule,
+        NzUploadModule,
+        NzGridModule,
+        NzTabsModule,
+        NzButtonModule,
+        NzInputModule,
+        FormsModule
+    ],
     providers: [NzMessageService],
     templateUrl: './gen-video.component.html',
     styleUrls: ['./gen-video.component.scss'],
 })
 export class GenVideoComponent {
-
-    tabs = [1, 2, 3];
-
+    valueRange: string = '20';
+    valueKey: string = '6654656';
     constructor(private msg: NzMessageService) {}
 
     handleChange({ file, fileList }: NzUploadChangeParam): void {
@@ -28,5 +38,8 @@ export class GenVideoComponent {
         } else if (status === 'error') {
             this.msg.error(`${file.name} file upload failed.`);
         }
+    }
+
+    onChangeRange(value: string) {
     }
 }

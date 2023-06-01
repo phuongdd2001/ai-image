@@ -1,5 +1,5 @@
-<div nz-row [nzGutter]="32">
-    <div nz-col [nzSpan]="18">
+<div nz-row [nzGutter]="48">
+    <div nz-col [nzSpan]="16">
         <nz-upload
             nzType="drag"
             [nzMultiple]="true"
@@ -9,17 +9,102 @@
             <p class="ant-upload-drag-icon">
                 <span nz-icon nzType="inbox"></span>
             </p>
-            <p class="ant-upload-text">Click or drag file to this area to upload</p>
+            <p class="ant-upload-text">
+                Click or drag file to this area to upload
+            </p>
             <p class="ant-upload-hint">
-                Support for a single or bulk upload. Strictly prohibit from uploading
-                company data or other band files
+                Support for a single or bulk upload. Strictly prohibit from
+                uploading company data or other band files
             </p>
         </nz-upload>
     </div>
-    <div nz-col [nzSpan]="6">
+    <div nz-col [nzSpan]="8">
         <nz-tabset nzType="card">
-            <nz-tab *ngFor="let tab of tabs" [nzTitle]="'Tab' + tab">Content of Tab Pane {{ tab }}</nz-tab>
-          </nz-tabset>
+            <nz-tab nzTitle="Image">
+                <div class="column-setting">
+                    <p>Style reference</p>
+                    <div nz-row [nzGutter]="[8, 8]">
+                        <div
+                            *ngFor="let item of [1, 2, 3, 4, 5, 6]"
+                            nz-col
+                            [nzSpan]="8"
+                        >
+                            <img
+                                width="100%"
+                                height="80px"
+                                src="assets/image/ai-tools/blurBackground.png"
+                            />
+                        </div>
+                    </div>
+                    <button style="width: 100%" nz-button nzType="primary">
+                        Upload
+                    </button>
+                </div>
+            </nz-tab>
+            <nz-tab nzTitle="Presets">
+                <div class="column-setting">
+                    <p>Style reference</p>
+                    <div nz-row [nzGutter]="[8, 8]">
+                        <div
+                            *ngFor="let item of [1, 2, 3, 4, 5, 6]"
+                            nz-col
+                            [nzSpan]="8"
+                        >
+                            <img
+                                width="100%"
+                                height="80px"
+                                src="assets/image/ai-tools/blurBackground.png"
+                            />
+                        </div>
+                    </div>
+                    <button style="width: 100%" nz-button nzType="primary">
+                        Upload
+                    </button>
+                </div>
+            </nz-tab>
+            <nz-tab nzTitle="Prompt">
+                <textarea nz-input placeholder="Controlled autosize" [nzAutosize]="{ minRows: 6, maxRows: 10 }"></textarea>
+            </nz-tab>
+        </nz-tabset>
+        <div class="column-setting">
+            <p>Settings</p>
+            <p>{{ valueRange + "%" }}</p>
+            <input
+                #styleStrength
+                nz-input
+                type="range"
+                min="0"
+                max="100"
+                [(ngModel)]="valueRange"
+                (change)="onChangeRange(styleStrength.value)"
+            />
+            <input
+                nz-input
+                placeholder="Basic usage"
+                [(ngModel)]="valueKey"
+            />
+        </div>
+        <div>
+            <div nz-row [nzGutter]="8">
+                <div nz-col [nzSpan]="12">
+                    <button
+                        style="width: 100%"
+                        nz-button
+                        nzType="primary"
+                    >
+                        Preview styles
+                    </button>
+                </div>
+                <div nz-col [nzSpan]="12">
+                    <button
+                        style="width: 100%"
+                        nz-button
+                        nzType="primary"
+                    >
+                        Generate video
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
